@@ -3,7 +3,7 @@
 
 # VWT Digital page
 
-This repository is used to run the VWT Digital page on GitHub Pages.
+This repository is used to run the [VWT Digital page](https://vwt-digital.github.io/) on GitHub Pages.
 
 ## Setup
 
