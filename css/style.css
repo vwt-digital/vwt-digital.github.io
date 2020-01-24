@@ -1,0 +1,74 @@
+/*!
+ * Start Bootstrap - Scrolling Nav (https://startbootstrap.com/template-overviews/scrolling-nav)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
+ */
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i");
+
+body{
+  font-family: 'Poppins', sans-serif !important;
+}
+
+section a{
+  color: #008BB8;
+}
+section a:hover{
+  color: #006f93;
+  text-decoration: none;
+}
+
+header {
+  padding: 156px 0 100px;
+}
+
+section {
+  padding: 150px 0;
+}
+
+section#about{
+  background-color: #ecf0f1;
+}
+
+.navbar{
+  background-color: #008BB8;
+  color: #FFF;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+  color: #FFF;
+}
+
+.navbar-brand img{
+  height: 30px;
+}
+
+.bg-primary{
+  background-image: url('https://images.pexels.com/photos/97077/pexels-photo-97077.jpeg?cs=srgb&dl=ai-codes-coding-97077.jpg&fm=jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: transparent !important
+}
+
+h1{
+  font-weight: 700;
+}
+
+footer.fullHeight{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+footer p{
+  font-size: 10px;
+  line-height: 12px;
+}
+footer p a{
+  color: #FFF;
+}
+footer p a:hover{
+  color: #CCCCCC;
+  text-decoration: none;
+}
