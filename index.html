@@ -2,87 +2,218 @@
 <html lang="en">
 
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139648906-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-139648906-1');
-  </script>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <link rel="shortcut icon" type="image/png" href="images/volkerwesselstelecom.ico">
+  <meta name="description" content="VWT Digital information page">
+  <meta name="author" content="VolkerWessels Digital Ambition Team <dat@vwt.digital>">
 
-  <title>VolkerWessels Telecom Digital</title>
+  <link rel="shortcut icon" href="img/volkerwesselstelecom.ico" />
 
+  <title>VWT Digital</title>
+
+  <!-- Bootstrap Core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/vwt-digital-style.min.css" rel="stylesheet">
 
 </head>
 
 <body id="page-top">
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="images/volkerwesselstelecom.png" /></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
+  <a class="menu-toggle" href="#">
+    <i class="fas fa-bars"></i>
+  </a>
+  <nav id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+      <li class="sidebar-brand">
+        <a class="js-scroll-trigger" href="#page-top">
+          <img src="img/volkerwesselstelecom_white.png" alt="VolkerWessels Telecom Logo">
+        </a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#page-top">Home</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#about">About</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#principles">Principles</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#contact">Contact</a>
+      </li>
+    </ul>
   </nav>
 
-  <header class="bg-primary text-white">
-    <div class="container text-center">
-      <h1>VolkerWessels Telecom Digital</h1>
-      <p class="lead">Welcome to the future of VolkerWessels Telecom</p>
+  <!-- Header -->
+  <header class="masthead d-flex">
+    <div class="container text-center my-auto">
+      <h1 class="mb-1">VWT Digital</h1>
+      <h3 class="mb-5">
+        <em>Welcome to the future of VolkerWessels Telecom</em>
+      </h3>
+      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
     </div>
+    <div class="overlay"></div>
   </header>
 
-  <section id="about">
-    <div class="container">
+  <!-- About -->
+  <section class="content-section bg-light" id="about">
+    <div class="container text-center">
       <div class="row">
-        <div class="col-lg-8 mx-auto">
+        <div class="col-lg-10 mx-auto">
           <h2>About</h2>
-          <p class="lead">The Digital Ambition Team of VolkerWessels Telecom is a dynamic team that focusses on developing Open Source solutions for the business.</p>
-          <a href="https://github.com/vwt-digital" target="_blank">View our projects</a>
+          <p class="lead mb-5">The Digital Ambition Team of VolkerWessels Telecom is a dynamic team that focusses on developing Open Source solutions for the business.</p>
+          <a class="btn btn-dark btn-xl js-scroll-trigger" href="#principles">Our principles</a>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="contact">
+  <!-- Principles -->
+  <section class="content-section bg-primary text-white text-center" id="principles">
     <div class="container">
+      <div class="content-section-heading">
+        <h3 class="text-secondary mb-0">Principles</h3>
+        <h2 class="mb-5">The way we work</h2>
+      </div>
       <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2>Contact us</h2>
-          <a href="mailto:opensource@vwt.digital">Send us an email!</a>
+        <div class="col-12 col-sm-6 col-md-4 principle-item">
+          <span class="principle-icon rounded-circle mx-auto mb-3">
+            <i class="fas fa-cloud"></i>
+          </span>
+          <h4>
+            <strong>Cloud native</strong>
+          </h4>
+          <p class="text-faded mb-0">Designed according to cloud-native architecture</p>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 principle-item">
+          <span class="principle-icon rounded-circle mx-auto mb-3">
+            <i class="fab fa-cloudscale"></i>
+          </span>
+          <h4>
+            <strong>Serverless</strong>
+          </h4>
+          <p class="text-faded mb-0">Just bring your code, pay-per-use</p>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 principle-item">
+          <span class="principle-icon rounded-circle mx-auto mb-3">
+            <i class="fas fa-globe-europe"></i>
+          </span>
+          <h4>
+            <strong>Open Source</strong>
+          </h4>
+          <p class="text-faded mb-0">Source code is publicly available</p>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 principle-item">
+          <span class="principle-icon rounded-circle mx-auto mb-3">
+            <i class="fas fa-code"></i>
+          </span>
+          <h4>
+            <strong>Software defined</strong>
+          </h4>
+          <p class="text-faded mb-0">IT infrastructure as code</p>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 principle-item">
+          <span class="principle-icon rounded-circle mx-auto mb-3">
+            <i class="fas fa-database"></i>
+          </span>
+          <h4>
+            <strong>Data integrated</strong>
+          </h4>
+          <p class="text-faded mb-0">Data not locked-up in applications and data silo’s, but available and shared</p>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 principle-item">
+          <span class="principle-icon rounded-circle mx-auto mb-3">
+            <i class="fas fa-shield-alt"></i>
+          </span>
+          <h4>
+            <strong>Security by design</strong>
+          </h4>
+          <p class="text-faded mb-0">Security is not added afterwards or a separate asset, but it is built-in insoftware, SDLC and developers’ minds</p>
         </div>
       </div>
     </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="content-section" id="portfolio">
+    <div class="container">
+      <div class="content-section-heading text-center">
+        <h3 class="text-secondary mb-0">Portfolio</h3>
+        <h2 class="mb-5">Recent Projects</h2>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-lg-6">
+          <a class="portfolio-item">
+            <span class="caption">
+              <span class="caption-content">
+                <h2>Operational Data Hub</h2>
+                <p class="mb-0">An enterprise architecture pattern that supports multiplebusiness lines to integrate through data.</p>
+              </span>
+            </span>
+            <img class="img-fluid" src="img/portfolio/odh.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="https://github.com/vwt-digital/fin-expenses-api" target="_blank">
+            <span class="caption">
+              <span class="caption-content">
+                <h2>Expenses application</h2>
+                <p class="mb-0">An expenses app for all employees of VolkerWessels Telecom!</p>
+              </span>
+            </span>
+            <img class="img-fluid" src="img/portfolio/expenses-app.jpg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="content-section bg-primary text-white">
+    <div class="container text-center">
+      <h2 class="mb-4">Became curious or just want to grab a cup of coffee?</h2>
+      <a href="mailto:support@vwt.digital" class="btn btn-xl btn-light mr-4">Mail us!</a>
+    </div>
+  </section>
+
+  <!-- Map -->
+  <section id="contact" class="map">
+    <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2446.958621657066!2d5.419246751861594!3d52.17144576965373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c64660ee050499%3A0x9f8028d7c90725d8!2sModemweg%2033%2C%203821%20BS%20Amersfoort!5e0!3m2!1sen!2snl!4v1579876742178!5m2!1sen!2snl"></iframe>
+    <br />
   </section>
 
   <!-- Footer -->
-  <footer class="py-3 bg-dark">
+  <footer class="footer text-center">
     <div class="container">
-      <p class="m-0 text-center text-white">&copy; 2019 <a href="https://vwtelecom.com/" target="_blank">VolkerWessels Telecom</a></p>
+      <ul class="list-inline mb-5">
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white" href="https://github.com/vwt-digital" target="_blank">
+            <i class="icon-social-github"></i>
+          </a>
+        </li>
+      </ul>
+      <p class="text-muted small mb-0">Copyright &copy; VolkerWessels Telecom 2020</p>
     </div>
-    <!-- /.container -->
   </footer>
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
@@ -91,9 +222,8 @@
   <!-- Plugin JavaScript -->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-  <!-- Custom JavaScript for this theme -->
-  <script src="js/scrolling-nav.js"></script>
-  <script src="js/script.js"></script>
+  <!-- Custom scripts for this template -->
+  <script src="js/vwt-digital-script.min.js"></script>
 
 </body>
 
