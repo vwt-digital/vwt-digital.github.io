@@ -1,5 +1,5 @@
 /*!
- * Start Bootstrap -  v1.0.0 ()
+ * Start Bootstrap -  v1.0.0 (https://vwt-digital.github.io/)
  * Copyright 2013-2020 VolkerWessels Digital Ambition Team <dat@vwt.digital>
  * Licensed under GPL-3.0 (https://github.com/BlackrockDigital/vwt-digital-page/blob/master/LICENSE)
  */
@@ -93,6 +93,7 @@ h6 {
   height: auto;
   padding-top: 8rem;
   padding-bottom: 8rem;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url("../img/bg-masthead.jpg");
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/bg-masthead.jpg");
   background-position: center center;
   background-repeat: no-repeat;
@@ -122,10 +123,12 @@ h6 {
   right: 0;
   width: 250px;
   height: 100%;
+  -webkit-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
+  -webkit-transform: translateX(250px);
   transform: translateX(250px);
   background: #495057;
-  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
 
 .sidebar-nav {
@@ -182,6 +185,7 @@ h6 {
 #sidebar-wrapper.active {
   right: 250px;
   width: 250px;
+  -webkit-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
 }
 
@@ -230,6 +234,7 @@ h6 {
 }
 
 .portfolio-item .caption {
+  display: -webkit-box;
   display: flex;
   height: 100%;
   width: 100%;
@@ -266,6 +271,7 @@ h6 {
     clip-path: inset(0px);
   }
   .portfolio-item .caption .caption-content {
+    -webkit-transition: opacity 0.25s;
     transition: opacity 0.25s;
     margin-left: 5rem;
     margin-right: 5rem;
@@ -287,6 +293,27 @@ h6 {
   }
 }
 
+.callout {
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+}
+
+.callout h2 {
+  font-size: 2rem;
+}
+
+.callout h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.callout img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
 footer.footer {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -299,6 +326,7 @@ footer.footer .social-link {
   line-height: 4.3rem;
   font-size: 1.5rem;
   background-color: #008bb8;
+  -webkit-transition: background-color 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
@@ -349,6 +377,10 @@ a:hover, a:focus, a:active {
 
 .bg-primary {
   background-color: #008bb8 !important;
+}
+
+.bg-secondary {
+  background-color: #ecb807 !important;
 }
 
 .text-primary {
