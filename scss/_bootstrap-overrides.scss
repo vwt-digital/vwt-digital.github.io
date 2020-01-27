@@ -48,6 +48,10 @@ a {
 }
 .bg-secondary {
   background-color: $secondary !important;
+
+  h3 {
+    color: $gray-200 !important;
+  }
 }
 
 .text-primary {

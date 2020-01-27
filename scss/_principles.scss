@@ -2,13 +2,46 @@
   padding: 20px;
 
   .principle-icon {
-    background-color: $white;
-    color: $primary;
-    height: 7rem;
-    width: 7rem;
     display: block;
-    line-height: 7.5rem;
-    font-size: 2.25rem;
-    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+    color: $white;
+    font-size: 4rem;
+
+    &.rounded-circle {
+      background-color: $white;
+      color: $primary;
+      height: 7rem;
+      width: 7rem;
+      line-height: 7.25rem;
+      font-size: 2.25rem;
+      box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    img.img-icon {
+      width: auto;
+      height: 4rem;
+      margin-top: -10px;
+    }
+  }
+
+  &.icon-only {
+    h4 {
+      font-size: 1rem;
+      text-transform: uppercase;
+    }
+  }
+
+  @media (max-width: $breakpoint-tablet-landscape-up) {
+    .principle-icon {
+      &.rounded-circle {
+        height: 3.5rem;
+        width: 3.5rem;
+        line-height: 3.75rem;
+        font-size: 1.5rem;
+      }
+    }
+
+    h4 {
+      margin: 0;
+    }
   }
 }

@@ -108,3 +108,10 @@
     // color: $gray-900;
   }
 }
+
+@media (max-width: $breakpoint-tablet-landscape-up) {
+  .sidebar-nav {
+    height: 100%;
+    overflow-y: scroll;
+  }
+}

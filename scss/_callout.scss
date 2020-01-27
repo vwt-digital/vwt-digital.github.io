@@ -17,4 +17,25 @@
     border-radius: 50%;
     box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .1);
   }
+
+  @media (max-width: $breakpoint-tablet-landscape-up) {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    h2 {
+      font-size: 1.75rem;
+    }
+
+    img {
+      max-height: 200px;
+      max-width: 100%;
+      width: auto;
+    }
+  }
+
+  @media (max-width: $breakpoint-tablet) {
+    img {
+      margin-bottom: 40px;
+    }
+  }
 }

@@ -1,23 +1,37 @@
 .portfolio-item {
-  display: block;
-  position: relative;
-  overflow: hidden;
-  max-width: 530px;
-  margin: auto auto 1rem;
+  height: 18rem;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .1);
 
-  .caption {
-    display: flex;
-    height: 100%;
+  .portfolio-content {
     width: 100%;
-    background-color: fade-out($gray-900, 0.8);
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
     position: absolute;
+    left: 0;
     top: 0;
-    bottom: 0;
-    z-index: 1;
 
-    .caption-content {
-      color: $white;
-      margin: auto 2rem 2rem;
+    color: $white;
+    padding: 1rem 2rem 2rem;
+
+    transition: background-color .3s ease-in;
+    -moz-transition: background-color .3s ease-in;
+    -ms-transition: background-color .3s ease-in;
+    -o-transition: background-color .3s ease-in;
+    -webkit-transition: background-color .3s ease-in;
+
+    i {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      opacity: 0.5;
+    }
+
+    .portfolio-text {
+      position: absolute;
+      bottom: 2rem;
+      left: 2rem;
+      width: calc(100% - 4rem);
+      max-height: calc(100% - 4rem);
 
       h2 {
         font-size: 0.8rem;
@@ -31,39 +45,39 @@
     }
   }
 
-  @media(min-width: 992px) {
-    max-width: none;
-    margin: 0;
+  .portfolio-background {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
-    .caption {
-      -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s;
-      -webkit-clip-path: inset(0px);
-      clip-path: inset(0px);
-
-      .caption-content {
-        transition: opacity 0.25s;
-        margin-left: 5rem;
-        margin-right: 5rem;
-        margin-bottom: 5rem;
-      }
+  a:hover {
+    .portfolio-content {
+      background-color: rgba($primary, .8);
     }
+  }
 
-    img {
-      -webkit-transition: -webkit-clip-path 0.25s ease-out;
-      -webkit-clip-path: inset(-1px);
-      clip-path: inset(-1px);
-    }
+  @media (max-width: $breakpoint-tablet-landscape-up) {
+    height: 14rem;
 
-    &:hover {
-      img {
-        -webkit-clip-path: inset(2rem);
-        clip-path: inset(2rem);
-      }
+    .portfolio-content {
+      padding: 1.5rem;
 
-      .caption {
-        background-color: fade-out($primary, 0.1);
-        -webkit-clip-path: inset(2rem);
-        clip-path: inset(2rem);
+      .portfolio-text {
+        bottom: 1.5rem;
+        left: 1.5rem;
+        width: calc(100% - 3rem);
+        max-height: calc(100% - 3rem);
+
+        h2 {
+          font-size: 0.7rem;
+        }
+
+        p {
+          font-size: 1rem;
+        }
       }
     }
   }

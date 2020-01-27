@@ -61,7 +61,7 @@
         <a class="js-scroll-trigger" href="#principles">Principles</a>
       </li>
       <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
+        <a class="js-scroll-trigger" href="#portfolio">Recent Work</a>
       </li>
       <li class="sidebar-nav-item">
         <a class="js-scroll-trigger" href="#team">Team</a>
@@ -79,10 +79,10 @@
       <h3 class="mb-5">
         <em>Welcome to the future of VolkerWessels Telecom</em>
       </h3>
-      <div class="btn-group btn-group-toggle" data-toggle="buttons">
-        <a class="btn btn-dark btn-xl js-scroll-trigger" href="#about">ABOUT</a>
-        <a class="btn btn-dark btn-xl js-scroll-trigger" href="#portfolio">PROJECTS</a>
-        <a class="btn btn-dark btn-xl js-scroll-trigger" href="#team">TEAM</a>
+      <div class="btn-group btn-group-toggle flex-wrap" data-toggle="buttons">
+        <a class="btn btn-dark btn-xl js-scroll-trigger" href="#about">About</a>
+        <a class="btn btn-dark btn-xl js-scroll-trigger" href="#portfolio">Recent work</a>
+        <a class="btn btn-dark btn-xl js-scroll-trigger" href="#team">Team</a>
       </div>
     </div>
     <div class="overlay"></div>
@@ -94,7 +94,7 @@
       <div class="row">
         <div class="col-lg-10 mx-auto">
           <h2>About</h2>
-          <p class="lead mb-5">The Digital Ambition Team of VolkerWessels Telecom is a dynamic team that focusses on developing Open Source solutions for the business.</p>
+          <p class="lead">The Digital Ambition Team of VolkerWessels Telecom is a dynamic team that focusses on developing Open Source solutions for the business.</p>
         </div>
       </div>
     </div>
@@ -105,7 +105,7 @@
     <div class="container">
       <div class="content-section-heading">
         <h3 class="text-secondary mb-0">Principles</h3>
-        <h2 class="mb-5">The way we work</h2>
+        <h2 class="mb-0 mb-md-5">The way we work</h2>
       </div>
       <div class="row">
         <div class="col-12 col-sm-6 col-md-4 principle-item">
@@ -160,7 +160,55 @@
           <h4>
             <strong>Security by design</strong>
           </h4>
-          <p class="text-faded mb-0">Security is not added afterwards or a separate asset, but it is built-in insoftware, SDLC and developers’ minds</p>
+          <p class="text-faded mb-0">Security is not added afterwards or a separate asset, but it is built-in in software, SDLC and developers’ minds</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Principles -->
+  <section class="content-section bg-secondary text-white text-center" id="tools">
+    <div class="container">
+      <div class="content-section-heading">
+        <h3 class="text-secondary mb-0">Languages & Tools</h3>
+        <h2 class="mb-0 mb-md-5">Our favorites</h2>
+      </div>
+      <div class="row">
+        <div class="col-4 col-sm-3 col-md-2 principle-item icon-only">
+          <span class="principle-icon mx-auto mb-3">
+            <i class="fab fa-python"></i>
+          </span>
+          <h4>Python</h4>
+        </div>
+        <div class="col-4 col-sm-3 col-md-2 principle-item icon-only">
+          <span class="principle-icon mx-auto mb-3">
+            <i class="fab fa-angular"></i>
+          </span>
+          <h4>Angular</h4>
+        </div>
+        <div class="col-4 col-sm-3 col-md-2 principle-item icon-only">
+          <span class="principle-icon mx-auto mb-3">
+            <img class="img-icon" src="img/google-cloud.svg" alt="Google Cloud Platform Icon">
+          </span>
+          <h4>Google Cloud Platform</h4>
+        </div>
+        <div class="col-4 col-sm-3 col-md-2 principle-item icon-only">
+          <span class="principle-icon mx-auto mb-3">
+            <i class="fab fa-github"></i>
+          </span>
+          <h4>Github</h4>
+        </div>
+        <div class="col-4 col-sm-3 col-md-2 principle-item icon-only">
+          <span class="principle-icon mx-auto mb-3">
+            <i class="fab fa-jira"></i>
+          </span>
+          <h4>Jira</h4>
+        </div>
+        <div class="col-4 col-sm-3 col-md-2 principle-item icon-only">
+          <span class="principle-icon mx-auto mb-3">
+            <i class="fab fa-ubuntu"></i>
+          </span>
+          <h4>Ubuntu</h4>
         </div>
       </div>
     </div>
@@ -171,29 +219,64 @@
     <div class="container">
       <div class="content-section-heading text-center">
         <h3 class="text-secondary mb-0">Portfolio</h3>
-        <h2 class="mb-5">Recent Projects</h2>
+        <h2 class="mb-5">Recent Work</h2>
       </div>
       <div class="row no-gutters">
-        <div class="col-lg-6">
-          <a class="portfolio-item">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>Operational Data Hub</h2>
-                <p class="mb-0">An enterprise architecture pattern that supports multiplebusiness lines to integrate through data.</p>
-              </span>
-            </span>
-            <img class="img-fluid" src="img/portfolio/odh.jpg" alt="">
+        <div class="col-12 col-md-6 portfolio-item">
+          <div class="portfolio-content">
+            <div class="portfolio-text">
+              <h2>Operational Data Hub</h2>
+              <p class="mb-0">An enterprise architecture pattern that supports multiple business lines to integrate through data</p>
+            </div>
+          </div>
+          <div class="portfolio-background" style="background-image: url('img/portfolio/odh.jpg');"></div>
+        </div>
+        <div class="col-12 col-md-6 portfolio-item">
+          <a href="https://github.com/vwt-digital/fin-expenses-api" target="_blank">
+            <div class="portfolio-content">
+              <i class="fas fa-link"></i>
+              <div class="portfolio-text">
+                <h2>Expenses application</h2>
+                <p class="mb-0">An expenses app for all employees of VolkerWessels Telecom</p>
+              </div>
+            </div>
+            <div class="portfolio-background" style="background-image: url('img/portfolio/expenses-app.jpg');"></div>
           </a>
         </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="https://github.com/vwt-digital/fin-expenses-api" target="_blank">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>Expenses application</h2>
-                <p class="mb-0">An expenses app for all employees of VolkerWessels Telecom!</p>
-              </span>
-            </span>
-            <img class="img-fluid" src="img/portfolio/expenses-app.jpg" alt="">
+        <div class="col-12 col-md-6 portfolio-item">
+          <a href="https://github.com/vwt-digital/snbplanningapi" target="_blank" title="View project">
+            <div class="portfolio-content">
+              <i class="fas fa-link"></i>
+              <div class="portfolio-text">
+                <h2>Planning application</h2>
+                <p class="mb-0">A place where employees can plan work-tickets, based on the mechanics' live location on the road</p>
+              </div>
+            </div>
+            <div class="portfolio-background" style="background-image: url('img/portfolio/snb-planning.jpg');"></div>
+          </a>
+        </div>
+        <div class="col-12 col-md-6 portfolio-item">
+          <a href="https://github.com/vwt-digital/restingest" target="_blank">
+            <div class="portfolio-content">
+              <i class="fas fa-link"></i>
+              <div class="portfolio-text">
+                <h2>Restingest</h2>
+                <p class="mb-0">A generic HTTP endpoint to which JSON documents can be posted to be stored in Cloud blob storage</p>
+              </div>
+            </div>
+            <div class="portfolio-background" style="background-image: url('img/portfolio/restingest.jpg');"></div>
+          </a>
+        </div>
+        <div class="col-12 col-md-6 portfolio-item">
+          <a href="https://github.com/vwt-digital/cloud-deployment" target="_blank">
+            <div class="portfolio-content">
+              <i class="fas fa-link"></i>
+              <div class="portfolio-text">
+                <h2>Cloud Deployment</h2>
+                <p class="mb-0">Automated deployment of projects to the Google Cloud Platform and management of GitHub branch protection rules</p>
+              </div>
+            </div>
+            <div class="portfolio-background" style="background-image: url('img/portfolio/cloud-deployment.jpg');"></div>
           </a>
         </div>
       </div>
@@ -209,7 +292,7 @@
         </div>
         <div class="col-12 col-md-8">
           <h3 class="text-secondary mb-0">The Team</h3>
-          <h2 class="mb-5">Years of experience in a young team focussed on changing and defining the future through innovation!</h2>
+          <h2>Years of experience in a young team, focussed on changing and defining the future through innovation!</h2>
         </div>
       </div>
     </div>
@@ -219,15 +302,16 @@
   <section class="content-section">
     <div class="container text-center">
       <h2 class="mb-4">Became curious or just want to grab a cup of coffee?</h2>
-      <a href="mailto:support@vwt.digital" class="btn btn-dark btn-xl mr-4">Mail us!</a>
+      <a href="mailto:support@vwt.digital" class="btn btn-dark btn-xl mr-4">
+        <i class="far fa-paper-plane"></i> Contact us!
+      </a>
     </div>
   </section>
 
   <!-- Map -->
   <section id="contact" class="map">
     <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2446.958621657066!2d5.419246751861594!3d52.17144576965373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c64660ee050499%3A0x9f8028d7c90725d8!2sModemweg%2033%2C%203821%20BS%20Amersfoort!5e0!3m2!1sen!2snl!4v1579876742178!5m2!1sen!2snl"></iframe>
-    <br />
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2446.9533519567053!2d5.41904105206295!3d52.17154157965036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c64660ed8cf3a9%3A0xabbebf41e87d6475!2sVolker%20Wessels%20Telecom!5e0!3m2!1sen!2suk!4v1580112868884!5m2!1sen!2suk"></iframe>
   </section>
 
   <!-- Footer -->
@@ -240,13 +324,15 @@
           </a>
         </li>
       </ul>
-      <p class="text-muted small mb-0">Copyright &copy; VolkerWessels Telecom 2020</p>
+      <p class="text-muted small mb-0">
+        Copyright &copy; <a href="https://www.vwtelecom.com/" target="_blank">VolkerWessels Telecom</a> <script type="text/javascript">document.write(new Date().getFullYear());</script>
+      </p>
     </div>
   </footer>
 
   <!-- Scroll to Top Button-->
   <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
-    <i class="fas fa-angle-up"></i>
+    <i class="fas fa-chevron-up"></i>
   </a>
 
   <!-- Bootstrap core JavaScript -->
