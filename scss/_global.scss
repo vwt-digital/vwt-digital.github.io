@@ -43,15 +43,24 @@ h6 {
   color: fade-out($white, 0.3);
 }
 
+.btn:focus {
+  outline: none !important;
+}
+
 /* Map */
 
 .map {
   height: 30rem;
 }
 
-@media(max-width: 992px) {
+@media(max-width: $breakpoint-tablet-landscape-up) {
   .map {
     height: 50%;
+  }
+
+  .content-section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 }
 
@@ -75,7 +84,7 @@ h6 {
   color: white;
   background: fade-out($gray-800, .5);
 
-  line-height: 45px;
+  line-height: 50px;
   &:focus,
   &:hover {
     color: white;
