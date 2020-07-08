@@ -1,0 +1,18 @@
+.content-odh {
+  ul.list-group {
+    li.list-group-item {
+      background-color: $primary-hover;
+      font-weight: 400;
+      text-align: left;
+
+      &.active {
+        text-align: center;
+        background-color: $primary-dark;
+        border-color: $primary-dark-hover;
+        font-size: 15px;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

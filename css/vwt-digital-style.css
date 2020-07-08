@@ -41,6 +41,10 @@ h6 {
   font-weight: 700;
 }
 
+p, ul li {
+  font-weight: 300;
+}
+
 .text-faded {
   color: rgba(255, 255, 255, 0.7);
 }
@@ -94,15 +98,14 @@ h6 {
 }
 
 .masthead {
-  min-height: 30rem;
   position: relative;
   display: table;
   width: 100%;
   height: auto;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url("../img/bg-masthead.jpg");
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/bg-masthead.jpg");
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url("../img/network-masthead.jpg");
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/network-masthead.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -120,9 +123,6 @@ h6 {
 }
 
 @media (min-width: 901px) {
-  .masthead {
-    height: 100vh;
-  }
   .masthead h1 {
     font-size: 5.5rem;
   }
@@ -223,6 +223,7 @@ h6 {
   text-align: center;
   color: #fff;
   background: rgba(52, 58, 64, 0.5);
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
   line-height: 50px;
   z-index: 999;
 }
@@ -268,6 +269,11 @@ h6 {
   margin-top: -10px;
 }
 
+.principle-item .text-faded {
+  color: #000;
+  opacity: .7;
+}
+
 .principle-item.icon-only h4 {
   font-size: 1rem;
   text-transform: uppercase;
@@ -283,6 +289,21 @@ h6 {
   .principle-item h4 {
     margin: 0;
   }
+}
+
+.content-odh ul.list-group li.list-group-item {
+  background-color: #007da5;
+  font-weight: 400;
+  text-align: left;
+}
+
+.content-odh ul.list-group li.list-group-item.active {
+  text-align: center;
+  background-color: #006180;
+  border-color: #00455c;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .portfolio-item {
@@ -465,6 +486,42 @@ a:hover, a:focus, a:active {
 
 .bg-secondary h3 {
   color: #e9ecef !important;
+}
+
+.bg-light-100 {
+  background-color: #f8f9fa !important;
+}
+
+.bg-light-200 {
+  background-color: #e9ecef !important;
+}
+
+.bg-light-300 {
+  background-color: #dee2e6 !important;
+}
+
+.bg-light-400 {
+  background-color: #ced4da !important;
+}
+
+.bg-light-500 {
+  background-color: #adb5bd !important;
+}
+
+.bg-light-600 {
+  background-color: #868e96 !important;
+}
+
+.bg-light-700 {
+  background-color: #495057 !important;
+}
+
+.bg-light-800 {
+  background-color: #343a40 !important;
+}
+
+.bg-light-900 {
+  background-color: #212529 !important;
 }
 
 .text-primary {
