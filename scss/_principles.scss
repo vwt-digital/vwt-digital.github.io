@@ -21,6 +21,12 @@
       height: 4rem;
       margin-top: -10px;
     }
+
+  }
+
+  .text-faded {
+    color: $black;
+    opacity: .7;
   }
 
   &.icon-only {

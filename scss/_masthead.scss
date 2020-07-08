@@ -1,12 +1,11 @@
 .masthead {
-  min-height: 30rem;
   position: relative;
   display: table;
   width: 100%;
   height: auto;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background: linear-gradient(90deg, fade-out($white, 0.9) 0%, fade-out($white, 0.9) 100%), url('../img/bg-masthead.jpg');
+  background: linear-gradient(90deg, fade-out($white, 0.9) 0%, fade-out($white, 0.9) 100%), url('../img/network-masthead.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -23,7 +22,6 @@
   }
 
   @media (min-width: $breakpoint-tablet-landscape-up + 1) {
-    height: 100vh;
     h1 {
       font-size: 5.5rem;
     }

@@ -39,6 +39,10 @@ h6 {
   font-weight: 700;
 }
 
+p, ul li {
+  font-weight: 300;
+}
+
 .text-faded {
   color: fade-out($white, 0.3);
 }
