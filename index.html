@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139648906-1"></script>
+  <!-- Google Analytics -->
   <script>
-    window.dataLayer = window.dataLayer || [];
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', 'UA-139648906-1', 'auto');
 
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
+    ga('require', 'eventTracker');
+    ga('require', 'maxScrollTracker');
+    ga('require', 'pageVisibilityTracker');
+    ga('require', 'outboundLinkTracker');
+    ga('require', 'urlChangeTracker');
 
-    gtag('config', 'UA-139648906-1');
+    ga('send', 'pageview');
   </script>
+  <script async src='https://www.google-analytics.com/analytics.js'></script>
+  <script async src="js/autotrack.js"></script>
 
 
   <meta charset="utf-8">

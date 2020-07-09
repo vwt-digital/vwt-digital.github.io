@@ -105,7 +105,8 @@ function js() {
   return gulp
     .src([
       './js/*.js',
-      '!./js/*.min.js'
+      '!./js/*.min.js',
+      '!./js/autotrack*'
     ])
     .pipe(uglify())
     .pipe(header(banner, {
