@@ -7,8 +7,8 @@
     ga('create', 'UA-139648906-1', 'auto');
 
     ga('require', 'eventTracker');
-    ga('require', 'maxScrollTracker');
-    ga('require', 'pageVisibilityTracker');
+    ga('require', 'maxScrollTracker', {sendInitialPageview: true, visibleMetricIndex: 2});
+    ga('require', 'pageVisibilityTracker', {sendInitialPageview: true, visibleMetricIndex: 1});
     ga('require', 'outboundLinkTracker');
     ga('require', 'urlChangeTracker');
 
