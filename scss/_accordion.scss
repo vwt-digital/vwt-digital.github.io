@@ -1,0 +1,42 @@
+.accordion {
+  .accordion-item {
+    .section {
+      background-color: $gray-500;
+      color: $white;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      text-align: left;
+      border: none;
+      outline: none;
+      transition: background-color 0.4s;
+      &.active, &:hover {
+        background-color: $gray-600;
+      }
+      &:after {
+        content: '+';
+        font-size: 13px;
+        color: $white;
+        float: right;
+        margin-left: 5px;
+      }
+    }
+
+    .panel {
+      padding: 5px 18px 0 18px;
+      background-color: $white;
+      display: none;
+      text-align: left;
+      border: 2px solid $gray-500;
+      overflow: hidden;
+
+      &-bold {
+        font-weight: bold;
+      }
+
+      &-code {
+        background-color: $gray-200;
+      }
+    }
+  }
+}

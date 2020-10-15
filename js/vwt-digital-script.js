@@ -23,6 +23,19 @@
     }
   });
 
+  // Handles accordion opening/closing
+  $('.accordion > .accordion-item > .section').each(function () {
+    $(this).on("click", function () {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  });
+
   // Closes responsive menu when a scroll trigger link is clicked
   $('#sidebar-wrapper .js-scroll-trigger').click(function() {
     $("#sidebar-wrapper").removeClass("active");

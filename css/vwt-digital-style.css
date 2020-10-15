@@ -279,6 +279,20 @@ p, ul li {
   text-transform: uppercase;
 }
 
+.principle-item.icon-include {
+  cursor: pointer;
+}
+
+.principle-item.icon-include:hover {
+  opacity: .8;
+}
+
+.principle-item.icon-include h4 {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+}
+
 @media (max-width: 900px) {
   .principle-item .principle-icon.rounded-circle {
     height: 3.5rem;
@@ -383,6 +397,48 @@ p, ul li {
   .portfolio-item .portfolio-content .portfolio-text p {
     font-size: 1rem;
   }
+}
+
+.accordion .accordion-item .section {
+  background-color: #adb5bd;
+  color: #fff;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  -webkit-transition: background-color 0.4s;
+  transition: background-color 0.4s;
+}
+
+.accordion .accordion-item .section.active, .accordion .accordion-item .section:hover {
+  background-color: #868e96;
+}
+
+.accordion .accordion-item .section:after {
+  content: '+';
+  font-size: 13px;
+  color: #fff;
+  float: right;
+  margin-left: 5px;
+}
+
+.accordion .accordion-item .panel {
+  padding: 5px 18px 0 18px;
+  background-color: #fff;
+  display: none;
+  text-align: left;
+  border: 2px solid #adb5bd;
+  overflow: hidden;
+}
+
+.accordion .accordion-item .panel-bold {
+  font-weight: bold;
+}
+
+.accordion .accordion-item .panel-code {
+  background-color: #e9ecef;
 }
 
 .callout {
