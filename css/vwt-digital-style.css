@@ -281,14 +281,17 @@ p, ul li {
 
 .principle-item.icon-include {
   cursor: pointer;
+  text-decoration: none;
+  -webkit-transition: all 0.05s ease-in-out;
+  transition: all 0.05s ease-in-out;
 }
 
 .principle-item.icon-include:hover {
-  opacity: .8;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .principle-item.icon-include h4 {
-  text-decoration: none;
   color: #fff;
   font-size: 1rem;
 }
@@ -399,6 +402,10 @@ p, ul li {
   }
 }
 
+.accordion .accordion-item {
+  position: relative;
+}
+
 .accordion .accordion-item .section {
   background-color: #adb5bd;
   color: #fff;
@@ -418,19 +425,23 @@ p, ul li {
 
 .accordion .accordion-item .section:after {
   content: '+';
-  font-size: 13px;
+  font-size: x-large;
   color: #fff;
-  float: right;
   margin-left: 5px;
+  position: absolute;
+  right: .5em;
+  top: .5em;
 }
 
 .accordion .accordion-item .panel {
-  padding: 5px 18px 0 18px;
+  padding: 0 18px;
   background-color: #fff;
-  display: none;
+  max-height: 0;
   text-align: left;
   border: 2px solid #adb5bd;
   overflow: hidden;
+  -webkit-transition: max-height .15s ease-in-out;
+  transition: max-height .15s ease-in-out;
 }
 
 .accordion .accordion-item .panel-bold {
@@ -439,6 +450,11 @@ p, ul li {
 
 .accordion .accordion-item .panel-code {
   background-color: #e9ecef;
+}
+
+.accordion .accordion-item .panel pre + pre {
+  border-top: 1px solid #868e96;
+  padding-top: 18px;
 }
 
 .callout {

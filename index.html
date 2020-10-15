@@ -1,433 +1,516 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google Analytics -->
-  <script>
-    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-    ga('create', 'UA-139648906-1', 'auto');
+    <!-- Google Analytics -->
+    <script>
+        window.ga = window.ga || function () {
+            (ga.q = ga.q || []).push(arguments)
+        };
+        ga.l = +new Date;
+        ga('create', 'UA-139648906-1', 'auto');
 
-    ga('require', 'eventTracker');
-    ga('require', 'maxScrollTracker', {sendInitialPageview: true, visibleMetricIndex: 2});
-    ga('require', 'pageVisibilityTracker', {sendInitialPageview: true, visibleMetricIndex: 1});
-    ga('require', 'outboundLinkTracker');
-    ga('require', 'urlChangeTracker');
+        ga('require', 'eventTracker');
+        ga('require', 'maxScrollTracker', {
+            sendInitialPageview: true,
+            visibleMetricIndex: 2
+        });
+        ga('require', 'pageVisibilityTracker', {
+            sendInitialPageview: true,
+            visibleMetricIndex: 1
+        });
+        ga('require', 'outboundLinkTracker');
+        ga('require', 'urlChangeTracker');
 
-    ga('send', 'pageview');
-  </script>
-  <script async src='https://www.google-analytics.com/analytics.js'></script>
-  <script async src="js/autotrack.js"></script>
+        ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <script async src="js/autotrack.js"></script>
 
 
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="VWT Digital information page">
-  <meta name="author" content="VolkerWessels Digital Ambition Team <dat@vwt.digital>">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="VWT Digital information page">
+    <meta name="author"
+          content="VolkerWessels Digital Ambition Team <dat@vwt.digital>">
 
-  <meta property="og:url" content="vwt-digital.github.io/" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Digital Ambition Team" />
-  <meta property="og:description" content="Digital Ambition Team of VolkerWessels Telecom" />
-  <meta property="og:image" content="https://vwt-digital.github.io/img/network-masthead.jpg" />
+    <meta property="og:url" content="vwt-digital.github.io/"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Digital Ambition Team"/>
+    <meta property="og:description"
+          content="Digital Ambition Team of VolkerWessels Telecom"/>
+    <meta property="og:image"
+          content="https://vwt-digital.github.io/img/network-masthead.jpg"/>
 
-  <link rel="shortcut icon" href="img/icons/volkerwesselstelecom.ico" />
+    <link rel="shortcut icon" href="img/icons/volkerwesselstelecom.ico"/>
 
-  <title>Digital Ambition Team | VWT</title>
+    <title>Digital Ambition Team | VWT</title>
 
-  <!-- Bootstrap Core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Custom Fonts -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet"
+          type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+          rel="stylesheet" type="text/css">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css"
+          rel="stylesheet">
 
-  <!-- Custom CSS -->
-  <link href="css/vwt-digital-style.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/vwt-digital-style.min.css" rel="stylesheet">
 
 </head>
 
 <body id="page-top">
 
-  <!-- Navigation -->
-  <a class="menu-toggle" href="#">
+<!-- Navigation -->
+<a class="menu-toggle" href="#">
     <i class="fas fa-bars"></i>
-  </a>
-  <nav id="sidebar-wrapper">
+</a>
+<nav id="sidebar-wrapper">
     <ul class="sidebar-nav">
-      <li class="sidebar-brand">
-        <a class="js-scroll-trigger" href="#page-top">
-          <img src="img/volkerwesselstelecom_white.png" alt="VolkerWessels Telecom Logo">
-        </a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#page-top">Home</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#operational-data-hub">Operational Data Hub</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#principles">Principles</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#tools">Languages & tools</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#portfolio">Recent Work</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#team">Team</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#contact">Contact</a>
-      </li>
+        <li class="sidebar-brand">
+            <a class="js-scroll-trigger" href="#page-top">
+                <img src="img/volkerwesselstelecom_white.png"
+                     alt="VolkerWessels Telecom Logo">
+            </a>
+        </li>
+        <li class="sidebar-nav-item">
+            <a class="js-scroll-trigger" href="#page-top">Home</a>
+        </li>
+        <li class="sidebar-nav-item">
+            <a class="js-scroll-trigger" href="#operational-data-hub">Operational
+                Data Hub</a>
+        </li>
+        <li class="sidebar-nav-item">
+            <a class="js-scroll-trigger" href="#principles">Principles</a>
+        </li>
+        <li class="sidebar-nav-item">
+            <a class="js-scroll-trigger" href="#tools">Languages & tools</a>
+        </li>
+        <li class="sidebar-nav-item">
+            <a class="js-scroll-trigger" href="#portfolio">Recent Work</a>
+        </li>
+        <li class="sidebar-nav-item">
+            <a class="js-scroll-trigger" href="#team">Team</a>
+        </li>
+        <li class="sidebar-nav-item">
+            <a class="js-scroll-trigger" href="#contact">Contact</a>
+        </li>
     </ul>
-  </nav>
+</nav>
 
-  <!-- Header -->
-  <header class="masthead d-flex">
+<!-- Header -->
+<header class="masthead d-flex">
     <div class="container text-center my-auto">
-      <h1 class="mb-1">Digital Ambition Team</h1>
-      <h3 class="m-0">
-        <em>Welcome to the future of VolkerWessels Telecom</em>
-      </h3>
+        <h1 class="mb-1">Digital Ambition Team</h1>
+        <h3 class="m-0">
+            <em>Welcome to the future of VolkerWessels Telecom</em>
+        </h3>
     </div>
     <div class="overlay"></div>
-  </header>
+</header>
 
-  <!-- About -->
-  <section class="content-section bg-light" id="about">
+<!-- About -->
+<section class="content-section bg-light" id="about">
     <div class="container text-center">
-      <div class="row">
-        <div class="col-lg-10 mx-auto">
-          <h2>About</h2>
-          <p class="lead">The Digital Ambition Team of VolkerWessels Telecom is a dynamic team that focusses on developing Open Source solutions for the business.</p>
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <h2>About</h2>
+                <p class="lead">The Digital Ambition Team of VolkerWessels
+                    Telecom is a dynamic team that focusses on developing Open
+                    Source solutions for the business.</p>
+            </div>
         </div>
-      </div>
     </div>
-  </section>
+</section>
 
-  <!-- Operational Data Hub -->
-  <section class="content-section content-odh bg-primary text-white" id="operational-data-hub">
+<!-- Operational Data Hub -->
+<section class="content-section content-odh bg-primary text-white"
+         id="operational-data-hub">
     <div class="container text-center">
-      <div class="content-section-heading">
-        <h3 class="text-secondary mb-0">Our pride</h3>
-        <h2 class="mb-2">Operational Data Hub</h2>
-        <p class="lead">An Operational Data Hub (ODH) platform was created to enable the digital transformation of VWT.</p>
-      </div>
-
-      <div class="row">
-        <div class="col-12 col-md-6 p-2 p-md-5 mb-0 mb-md-5 content-section-list">
-          <h4>ODH</h4>
-          <p>
-            The ODH implements an enterprise application integration architecture in which a central data hub facilitates all applications to connect and exchange data.
-            This central data hub serves as the all-inclusive source of truth, capturing all information and business events, enabling the data driven enterprise.
-          </p>
+        <div class="content-section-heading">
+            <h3 class="text-secondary mb-0">Our pride</h3>
+            <h2 class="mb-2">Operational Data Hub</h2>
+            <p class="lead">An Operational Data Hub (ODH) platform was created
+                to enable the digital transformation of VWT.</p>
         </div>
 
-        <div class="col-12 col-md-6 p-2 p-md-5 mb-5 mb-md-5 content-section-list">
-          <h4>CI/CD</h4>
-          <p>
-            An open source security-built-in CI/CD environment, supporting agile software development is the foundation of the ODH platform.
-            This CI/CD environment allows agile software development with built-in enterprise grade compliance and control.
-          </p>
-        </div>
+        <div class="row">
+            <div class="col-12 col-md-6 p-2 p-md-5 mb-0 mb-md-5 content-section-list">
+                <h4>ODH</h4>
+                <p>
+                    The ODH implements an enterprise application integration
+                    architecture in which a central data hub facilitates all
+                    applications to connect and exchange data.
+                    This central data hub serves as the all-inclusive source of
+                    truth, capturing all information and business events,
+                    enabling the data driven enterprise.
+                </p>
+            </div>
 
-        <div class="col-12 col-md-6 p-2 content-section-list">
-          <ul class="list-group m-0">
-            <li class="list-group-item active">Features</li>
-            <li class="list-group-item">Enterprise Application Integration platform</li>
-            <li class="list-group-item">Services run-the-business and observe-the-business</li>
-            <li class="list-group-item">Business Intelligence (BI) services</li>
-            <li class="list-group-item">Data Science platform</li>
-            <li class="list-group-item">Hub-model integration keeps you in control of application integration</li>
-            <li class="list-group-item">Zero-maintenance Data catalog</li>
-            <li class="list-group-item">Built-in security framework</li>
-            <li class="list-group-item">Supports full CI/CD into production environment</li>
-          </ul>
-        </div>
+            <div class="col-12 col-md-6 p-2 p-md-5 mb-5 mb-md-5 content-section-list">
+                <h4>CI/CD</h4>
+                <p>
+                    An open source security-built-in CI/CD environment,
+                    supporting agile software development is the foundation of
+                    the ODH platform.
+                    This CI/CD environment allows agile software development
+                    with built-in enterprise grade compliance and control.
+                </p>
+            </div>
 
-        <div class="col-12 col-md-6 p-2">
-          <ul class="list-group m-0">
-            <li class="list-group-item active">Principles</li>
-            <li class="list-group-item">Software defined</li>
-            <li class="list-group-item">Serverless</li>
-            <li class="list-group-item">Cloud native</li>
-            <li class="list-group-item">Security by design</li>
-            <li class="list-group-item">Data integrated</li>
-            <li class="list-group-item">Open Source</li>
-          </ul>
-        </div>
+            <div class="col-12 col-md-6 p-2 content-section-list">
+                <ul class="list-group m-0">
+                    <li class="list-group-item active">Features</li>
+                    <li class="list-group-item">Enterprise Application
+                        Integration platform
+                    </li>
+                    <li class="list-group-item">Services run-the-business and
+                        observe-the-business
+                    </li>
+                    <li class="list-group-item">Business Intelligence (BI)
+                        services
+                    </li>
+                    <li class="list-group-item">Data Science platform</li>
+                    <li class="list-group-item">Hub-model integration keeps you
+                        in control of application integration
+                    </li>
+                    <li class="list-group-item">Zero-maintenance Data catalog
+                    </li>
+                    <li class="list-group-item">Built-in security framework</li>
+                    <li class="list-group-item">Supports full CI/CD into
+                        production environment
+                    </li>
+                </ul>
+            </div>
 
-        <div class="col-12 col-md-12 p-2">
-          <ul class="list-group m-0">
-            <li class="list-group-item active">Supported operating models</li>
-            <li class="list-group-item">Anything between IT Ops and NoOps, including DevOps and DevSecOps</li>
-            <li class="list-group-item">Delivering control by GitOps, supporting NoOps by automating everything</li>
-          </ul>
-        </div>
+            <div class="col-12 col-md-6 p-2">
+                <ul class="list-group m-0">
+                    <li class="list-group-item active">Principles</li>
+                    <li class="list-group-item">Software defined</li>
+                    <li class="list-group-item">Serverless</li>
+                    <li class="list-group-item">Cloud native</li>
+                    <li class="list-group-item">Security by design</li>
+                    <li class="list-group-item">Data integrated</li>
+                    <li class="list-group-item">Open Source</li>
+                </ul>
+            </div>
 
-        <div class="col-12 col-md-12 p-2">
-          <a href="https://github.com/vwt-digital/operational-data-hub" target="_blank" class="btn btn-primary-dark">
-            Read more <i class="fas fa-external-link-alt ml-2"></i>
-          </a>
+            <div class="col-12 col-md-12 p-2">
+                <ul class="list-group m-0">
+                    <li class="list-group-item active">Supported operating
+                        models
+                    </li>
+                    <li class="list-group-item">Anything between IT Ops and
+                        NoOps, including DevOps and DevSecOps
+                    </li>
+                    <li class="list-group-item">Delivering control by GitOps,
+                        supporting NoOps by automating everything
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-12 col-md-12 p-2">
+                <a href="https://github.com/vwt-digital/operational-data-hub"
+                   target="_blank" class="btn btn-primary-dark">
+                    Read more <i class="fas fa-external-link-alt ml-2"></i>
+                </a>
+            </div>
         </div>
-      </div>
     </div>
-  </section>
+</section>
 
-  <!-- Principles -->
-  <section class="content-section bg-light-200 text-center" id="principles">
+<!-- Principles -->
+<section class="content-section bg-light-200 text-center" id="principles">
     <div class="container">
-      <div class="content-section-heading">
-        <h3 class="text-secondary mb-0">Our principles</h3>
-        <h2 class="mb-0 mb-md-5">The way we work</h2>
-      </div>
-      <div class="row">
-        <div class="col-12 col-sm-6 col-md-4 principle-item">
+        <div class="content-section-heading">
+            <h3 class="text-secondary mb-0">Our principles</h3>
+            <h2 class="mb-0 mb-md-5">The way we work</h2>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 principle-item">
           <span class="principle-icon rounded-circle mx-auto mb-3">
             <i class="fas fa-cloud"></i>
           </span>
-          <h4>
-            <strong>Cloud native</strong>
-          </h4>
-          <p class="text-faded mb-0">Designed according to cloud-native architecture</p>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 principle-item">
+                <h4>
+                    <strong>Cloud native</strong>
+                </h4>
+                <p class="text-faded mb-0">Designed according to cloud-native
+                    architecture</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 principle-item">
           <span class="principle-icon rounded-circle mx-auto mb-3">
             <i class="fab fa-cloudscale"></i>
           </span>
-          <h4>
-            <strong>Serverless</strong>
-          </h4>
-          <p class="text-faded mb-0">Just bring your code, pay-per-use</p>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 principle-item">
+                <h4>
+                    <strong>Serverless</strong>
+                </h4>
+                <p class="text-faded mb-0">Just bring your code, pay-per-use</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 principle-item">
           <span class="principle-icon rounded-circle mx-auto mb-3">
             <i class="fas fa-globe-europe"></i>
           </span>
-          <h4>
-            <strong>Open Source</strong>
-          </h4>
-          <p class="text-faded mb-0">Source code is publicly available</p>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 principle-item">
+                <h4>
+                    <strong>Open Source</strong>
+                </h4>
+                <p class="text-faded mb-0">Source code is publicly available</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 principle-item">
           <span class="principle-icon rounded-circle mx-auto mb-3">
             <i class="fas fa-code"></i>
           </span>
-          <h4>
-            <strong>Software defined</strong>
-          </h4>
-          <p class="text-faded mb-0">IT infrastructure as code</p>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 principle-item">
+                <h4>
+                    <strong>Software defined</strong>
+                </h4>
+                <p class="text-faded mb-0">IT infrastructure as code</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 principle-item">
           <span class="principle-icon rounded-circle mx-auto mb-3">
             <i class="fas fa-database"></i>
           </span>
-          <h4>
-            <strong>Data integrated</strong>
-          </h4>
-          <p class="text-faded mb-0">Data not locked-up in applications and data silo’s, but available and shared</p>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 principle-item">
+                <h4>
+                    <strong>Data integrated</strong>
+                </h4>
+                <p class="text-faded mb-0">Data not locked-up in applications
+                    and data silo’s, but available and shared</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 principle-item">
           <span class="principle-icon rounded-circle mx-auto mb-3">
             <i class="fas fa-shield-alt"></i>
           </span>
-          <h4>
-            <strong>Security by design</strong>
-          </h4>
-          <p class="text-faded mb-0">Security is not added afterwards or a separate asset, but it is built-in in software, SDLC and developers’ minds</p>
+                <h4>
+                    <strong>Security by design</strong>
+                </h4>
+                <p class="text-faded mb-0">Security is not added afterwards or a
+                    separate asset, but it is built-in in software, SDLC and
+                    developers’ minds</p>
+            </div>
         </div>
-      </div>
     </div>
-  </section>
+</section>
 
-  <!-- Tools -->
-  <section class="content-section bg-secondary text-white text-center" id="tools">
+<!-- Tools -->
+<section class="content-section bg-secondary text-white text-center" id="tools">
     <div class="container">
-      <div class="content-section-heading">
-        <h3 class="text-secondary mb-0">Languages & Tools</h3>
-        <h2 class="mb-0 mb-md-5">Our favorites</h2>
-      </div>
-      <div class="row">
-        <div class="col-4 col-sm-3 mx-auto principle-item icon-only">
+        <div class="content-section-heading">
+            <h3 class="text-secondary mb-0">Languages & Tools</h3>
+            <h2 class="mb-0 mb-md-5">Our favorites</h2>
+        </div>
+        <div class="row">
+            <div class="col-4 col-sm-3 mx-auto principle-item icon-only">
           <span class="principle-icon mx-auto mb-3">
             <i class="fab fa-python"></i>
           </span>
-          <h4>Python</h4>
-        </div>
-        <div class="col-4 col-sm-3 mx-auto principle-item icon-only">
+                <h4>Python</h4>
+            </div>
+            <div class="col-4 col-sm-3 mx-auto principle-item icon-only">
           <span class="principle-icon mx-auto mb-3">
             <i class="fab fa-angular"></i>
           </span>
-          <h4>Angular</h4>
-        </div>
-        <div class="col-4 col-sm-3 mx-auto principle-item icon-only">
+                <h4>Angular</h4>
+            </div>
+            <div class="col-4 col-sm-3 mx-auto principle-item icon-only">
           <span class="principle-icon mx-auto mb-3">
             <i class="fab fa-docker"></i>
           </span>
-          <h4>Docker</h4>
-        </div>
-        <div class="col-4 col-sm-3 mx-auto principle-item icon-only">
+                <h4>Docker</h4>
+            </div>
+            <div class="col-4 col-sm-3 mx-auto principle-item icon-only">
           <span class="principle-icon mx-auto mb-3">
-            <img class="img-icon" src="img/icons/openapi.svg" alt="Google Cloud Platform Icon">
+            <img class="img-icon" src="img/icons/openapi.svg"
+                 alt="Google Cloud Platform Icon">
           </span>
-          <h4>OpenAPI</h4>
-        </div>
-        <div class="col-4 col-sm-3 mx-auto principle-item icon-only">
+                <h4>OpenAPI</h4>
+            </div>
+            <div class="col-4 col-sm-3 mx-auto principle-item icon-only">
           <span class="principle-icon mx-auto mb-3">
-            <img class="img-icon" src="img/icons/google-cloud.svg" alt="Google Cloud Platform Icon">
+            <img class="img-icon" src="img/icons/google-cloud.svg"
+                 alt="Google Cloud Platform Icon">
           </span>
-          <h4>Google Cloud Platform</h4>
-        </div>
-        <div class="col-4 col-sm-3 mx-auto principle-item icon-only">
+                <h4>Google Cloud Platform</h4>
+            </div>
+            <div class="col-4 col-sm-3 mx-auto principle-item icon-only">
           <span class="principle-icon mx-auto mb-3">
             <i class="fab fa-github"></i>
           </span>
-          <h4>Github</h4>
-        </div>
-        <div class="col-4 col-sm-3 mx-auto principle-item icon-only">
+                <h4>Github</h4>
+            </div>
+            <div class="col-4 col-sm-3 mx-auto principle-item icon-only">
           <span class="principle-icon mx-auto mb-3">
             <i class="fab fa-ubuntu"></i>
           </span>
-          <h4>Ubuntu</h4>
+                <h4>Ubuntu</h4>
+            </div>
         </div>
-      </div>
     </div>
-  </section>
+</section>
 
-  <!-- Portfolio -->
-  <section class="content-section" id="portfolio">
+<!-- Portfolio -->
+<section class="content-section" id="portfolio">
     <div class="container">
-      <div class="content-section-heading text-center">
-        <h3 class="text-secondary mb-0">Portfolio</h3>
-        <h2 class="mb-5">Recent Work</h2>
-      </div>
-      <div class="row no-gutters">
-        <div class="col-12 col-md-6 portfolio-item">
-          <a href="https://github.com/vwt-digital/operational-data-hub" target="_blank" title="github/vwt-digital/operational-data-hub">
-            <div class="portfolio-content">
-              <i class="fas fa-external-link-square-alt"></i>
-              <div class="portfolio-text">
-                <h2>Operational Data Hub</h2>
-                <p class="mb-0">An enterprise architecture pattern that supports multiple business lines to integrate through data</p>
-              </div>
-            </div>
-            <div class="portfolio-background" style="background-image: url('img/portfolio/odh.jpg');"></div>
-          </a>
+        <div class="content-section-heading text-center">
+            <h3 class="text-secondary mb-0">Portfolio</h3>
+            <h2 class="mb-5">Recent Work</h2>
         </div>
-        <div class="col-12 col-md-6 portfolio-item">
-          <a href="https://github.com/vwt-digital-solutions/fin-expenses-api" target="_blank" title="github/vwt-digital/fin-expenses-api">
-            <div class="portfolio-content">
-              <i class="fas fa-external-link-square-alt"></i>
-              <div class="portfolio-text">
-                <h2>Expenses application</h2>
-                <p class="mb-0">An expenses app for all employees of VolkerWessels Telecom</p>
-              </div>
+        <div class="row no-gutters">
+            <div class="col-12 col-md-6 portfolio-item">
+                <a href="https://github.com/vwt-digital/operational-data-hub"
+                   target="_blank"
+                   title="github/vwt-digital/operational-data-hub">
+                    <div class="portfolio-content">
+                        <i class="fas fa-external-link-square-alt"></i>
+                        <div class="portfolio-text">
+                            <h2>Operational Data Hub</h2>
+                            <p class="mb-0">An enterprise architecture pattern
+                                that supports multiple business lines to
+                                integrate through data</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-background"
+                         style="background-image: url('img/portfolio/odh.jpg');"></div>
+                </a>
             </div>
-            <div class="portfolio-background" style="background-image: url('img/portfolio/expenses-app.jpg');"></div>
-          </a>
-        </div>
-        <div class="col-12 col-md-6 portfolio-item">
-          <a href="https://github.com/vwt-digital-solutions/snbplanningapi" target="_blank" title="github/vwt-digital/snbplanningapi">
-            <div class="portfolio-content">
-              <i class="fas fa-external-link-square-alt"></i>
-              <div class="portfolio-text">
-                <h2>Planning application</h2>
-                <p class="mb-0">A place where employees can plan work-tickets, based on the mechanics' live location on the road</p>
-              </div>
+            <div class="col-12 col-md-6 portfolio-item">
+                <a href="https://github.com/vwt-digital-solutions/fin-expenses-api"
+                   target="_blank" title="github/vwt-digital/fin-expenses-api">
+                    <div class="portfolio-content">
+                        <i class="fas fa-external-link-square-alt"></i>
+                        <div class="portfolio-text">
+                            <h2>Expenses application</h2>
+                            <p class="mb-0">An expenses app for all employees of
+                                VolkerWessels Telecom</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-background"
+                         style="background-image: url('img/portfolio/expenses-app.jpg');"></div>
+                </a>
             </div>
-            <div class="portfolio-background" style="background-image: url('img/portfolio/snb-planning.jpg');"></div>
-          </a>
-        </div>
-        <div class="col-12 col-md-6 portfolio-item">
-          <a href="https://github.com/vwt-digital/restingest" target="_blank" title="github/vwt-digital/restingest">
-            <div class="portfolio-content">
-              <i class="fas fa-external-link-square-alt"></i>
-              <div class="portfolio-text">
-                <h2>Restingest</h2>
-                <p class="mb-0">A generic HTTP endpoint to which JSON documents can be posted to be stored in Cloud blob storage</p>
-              </div>
+            <div class="col-12 col-md-6 portfolio-item">
+                <a href="https://github.com/vwt-digital-solutions/snbplanningapi"
+                   target="_blank" title="github/vwt-digital/snbplanningapi">
+                    <div class="portfolio-content">
+                        <i class="fas fa-external-link-square-alt"></i>
+                        <div class="portfolio-text">
+                            <h2>Planning application</h2>
+                            <p class="mb-0">A place where employees can plan
+                                work-tickets, based on the mechanics' live
+                                location on the road</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-background"
+                         style="background-image: url('img/portfolio/snb-planning.jpg');"></div>
+                </a>
             </div>
-            <div class="portfolio-background" style="background-image: url('img/portfolio/restingest.jpg');"></div>
-          </a>
-        </div>
-        <div class="col-12 col-md-6 portfolio-item">
-          <a href="https://github.com/vwt-digital/dynamic-data-manipulation-api" target="_blank" title="github/vwt-digital/dynamic-data-manipulation-api">
-            <div class="portfolio-content">
-              <i class="fas fa-external-link-square-alt"></i>
-              <div class="portfolio-text">
-                <h2>Dynamic Data Manipulation API</h2>
-                <p class="mb-0">An API to view and edit data dynamically, based purely on configuration</p>
-              </div>
+            <div class="col-12 col-md-6 portfolio-item">
+                <a href="https://github.com/vwt-digital/restingest"
+                   target="_blank" title="github/vwt-digital/restingest">
+                    <div class="portfolio-content">
+                        <i class="fas fa-external-link-square-alt"></i>
+                        <div class="portfolio-text">
+                            <h2>Restingest</h2>
+                            <p class="mb-0">A generic HTTP endpoint to which
+                                JSON documents can be posted to be stored in
+                                Cloud blob storage</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-background"
+                         style="background-image: url('img/portfolio/restingest.jpg');"></div>
+                </a>
             </div>
-            <div class="portfolio-background" style="background-image: url('img/portfolio/dynamic-data-manipulation-api.jpg');"></div>
-          </a>
-        </div>
-        <div class="col-12 col-md-6 portfolio-item">
-          <a href="https://github.com/vwt-digital" target="_blank" title="github/vwt-digital">
-            <div class="portfolio-content">
-              <i class="fas fa-external-link-square-alt"></i>
-              <div class="portfolio-text">
-                <h2>Browse more cool projects on GitHub</h2>
-              </div>
+            <div class="col-12 col-md-6 portfolio-item">
+                <a href="https://github.com/vwt-digital/dynamic-data-manipulation-api"
+                   target="_blank"
+                   title="github/vwt-digital/dynamic-data-manipulation-api">
+                    <div class="portfolio-content">
+                        <i class="fas fa-external-link-square-alt"></i>
+                        <div class="portfolio-text">
+                            <h2>Dynamic Data Manipulation API</h2>
+                            <p class="mb-0">An API to view and edit data
+                                dynamically, based purely on configuration</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-background"
+                         style="background-image: url('img/portfolio/dynamic-data-manipulation-api.jpg');"></div>
+                </a>
             </div>
-            <div class="portfolio-background" style="background-image: url('img/github-wallpaper.jpg');"></div>
-          </a>
+            <div class="col-12 col-md-6 portfolio-item">
+                <a href="https://github.com/vwt-digital" target="_blank"
+                   title="github/vwt-digital">
+                    <div class="portfolio-content">
+                        <i class="fas fa-external-link-square-alt"></i>
+                        <div class="portfolio-text">
+                            <h2>Browse more cool projects on GitHub</h2>
+                        </div>
+                    </div>
+                    <div class="portfolio-background"
+                         style="background-image: url('img/github-wallpaper.jpg');"></div>
+                </a>
+            </div>
         </div>
-      </div>
     </div>
-  </section>
+</section>
 
-  <!-- Place -->
-  <section class="content-section bg-secondary text-white text-center" id="place">
+<!-- Place -->
+<section class="content-section bg-secondary text-white text-center" id="place">
     <div class="container">
-      <div class="content-section-heading">
-        <h3 class="text-secondary mb-0">Organisations</h3>
-        <h2 class="mb-0 mb-md-5">Where we are</h2>
-      </div>
-      <div class="row">
-        <a class="col-4 col-sm-3 mx-auto principle-item icon-include" href="https://pypi.org/user/vwtdigital/">
+        <div class="content-section-heading">
+            <h3 class="text-secondary mb-0">Organisations</h3>
+            <h2 class="mb-0 mb-md-5">Where we are</h2>
+        </div>
+        <div class="row">
+            <a target="_blank"
+               class="col-4 col-sm-3 mx-auto principle-item icon-include"
+               href="https://pypi.org/user/vwtdigital/">
           <span class="principle-icon mx-auto mb-3">
             <img class="img-icon" src="img/icons/pypi.png" alt="Pypi Icon">
           </span>
-          <h4>VWT Digital</h4>
-        </a>
-        <a class="col-4 col-sm-3 mx-auto principle-item icon-include" href="https://www.npmjs.com/~vwtdigital">
+                <h4>VWT Digital</h4>
+            </a>
+            <a target="_blank"
+               class="col-4 col-sm-3 mx-auto principle-item icon-include"
+               href="https://www.npmjs.com/~vwtdigital">
           <span class="principle-icon mx-auto mb-3">
             <i class="fab fa-npm"></i>
           </span>
-          <h4>vwtdigital</h4>
-        </a>
-        <a class="col-4 col-sm-3 mx-auto principle-item icon-include" href="https://hub.docker.com/u/vwtdigital">
+                <h4>vwtdigital</h4>
+            </a>
+            <a target="_blank"
+               class="col-4 col-sm-3 mx-auto principle-item icon-include"
+               href="https://hub.docker.com/u/vwtdigital">
           <span class="principle-icon mx-auto mb-3">
             <i class="fab fa-docker"></i>
           </span>
-          <h4>vwtdigital</h4>
-        </a>
-        <a class="col-4 col-sm-3 mx-auto principle-item icon-include" href="https://github.com/vwt-digital">
+                <h4>vwtdigital</h4>
+            </a>
+            <a target="_blank"
+               class="col-4 col-sm-3 mx-auto principle-item icon-include"
+               href="https://github.com/vwt-digital">
           <span class="principle-icon mx-auto mb-3">
             <i class="fab fa-github"></i>
           </span>
-          <h4>VWT Digital</h4>
-        </a>
-      </div>
+                <h4>VWT Digital</h4>
+            </a>
+        </div>
     </div>
-  </section>
+</section>
 
-  <!-- Policy -->
-  <section class="content-section text-center" id="policy">
+<!-- Policy -->
+<section class="content-section text-center" id="policy">
     <div class="container">
-      <div class="content-section-heading">
-        <h3 class="text-secondary mb-0">Open source</h3>
-        <h2 class="mb-0 mb-md-5">Contribution Policy</h2>
-      </div>
-      <div class="accordion">
-        <div class="accordion-item">
-          <div class="section">
-            Reporting Issues
-          </div>
-          <div class="panel">
+        <div class="content-section-heading">
+            <h3 class="text-secondary mb-0">Open source</h3>
+            <h2 class="mb-0 mb-md-5">Contribution Policy</h2>
+        </div>
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="section">
+                    Reporting Issues
+                </div>
+                <div class="panel">
 <pre>
 It is incredibly helpful when issues or bugs are reported. To ensure that these issues can be solved as quickly and as
 goal oriented as possible, we've but together some guidelines for submitting issues.
@@ -436,18 +519,19 @@ goal oriented as possible, we've but together some guidelines for submitting iss
   This is important, because it allows us to evaluate importance between issues.
 - Start the issue with <span class="panel-bold">a description of where you found the issue</span>.
   This allows us to read the rest with a clear insight of what component we need to look at.
+- <span class="panel-bold">Add the error message</span> so we know what the issue is.
 - <span class="panel-bold">Describe how we can reproduce the issue.</span> Try to describe the exact steps you took.
-- <span class="panel-bold">Include the output</span> of any scripts that ran during or before the issue occured.
+- <span class="panel-bold">Include the output</span> of any scripts that ran during or before the issue occurred.
 - <span class="panel-bold">Describe what you expected to happen</span> and how that is different to what happened.
 - If you created a solution, <span class="panel-bold">please create a Pull Request</span> and link it.
 </pre>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <div class="section">
-            Suggesting Enhancements
-          </div>
-          <div class="panel">
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="section">
+                    Suggesting Enhancements
+                </div>
+                <div class="panel">
 <pre>
 New ideas or enhancements are always helpful and welcome! To help us understand the idea better,
 we've put together some guidelines for submitting these suggestions.
@@ -458,35 +542,43 @@ we've put together some guidelines for submitting these suggestions.
 - <span class="panel-bold">Describe what the enhancement is and what is should do</span>.
   Be as clear as possible, and try to add possible outputs to the description.
 - <span class="panel-bold">Describe why the enhancement should be added</span> to the project.
+- <span class="panel-bold">Add examples</span> of the new enhancement.
 - Already changed some code? <span class="panel-bold">Create a Pull Request</span> and link it to the suggestion!
 </pre>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <div class="section">
-            Message Guidelines
-          </div>
-          <div class="panel">
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="section">
+                    Message Guidelines
+                </div>
+                <div class="panel">
 <pre>
-- Use past tense (Do: <span class="panel-code">Removed ...</span>, don't: <span class="panel-code">Remove ...</span>. Do: <span class="panel-code">Added ...</span>, don't: <span class="panel-code">Add ...</span>)
-- Act as you take the action (Do: <span class="panel-code">Moved ...</span>, don't <span class="panel-code">Moves ...</span>)
-- Messages should not contain emojis. (Do: <span class="panel-code">Deleted ...</span>, don't: <span class="panel-code">:apple: ...</span>)
-- References to issues should be added, if possible (Do: <span class="panel-code">... #2</span>, don't: <span class="panel-code">... Trello-12</span>)
-- We use Jira Tickets, you shouldn't (Do: <span class="panel-code">... #2</span>, don't: <span class="panel-code">... DAT-0000</span>)
+- Use past tense (Do: <span class="panel-code">Removed ...</span>, don't: <span
+        class="panel-code">Remove ...</span>. Do: <span class="panel-code">Added ...</span>, don't: <span
+        class="panel-code">Add ...</span>)
+- Act as you take the action (Do: <span class="panel-code">Moved ...</span>, don't <span
+        class="panel-code">Moves ...</span>)
+- Messages should not contain emojis. (Do: <span
+        class="panel-code">Deleted ...</span>, don't: <span class="panel-code">:apple: ...</span>)
+- References to issues should be added, if possible (Do: <span
+        class="panel-code">... #2</span>, don't: <span class="panel-code">... Trello-12</span>)
+- We use Jira Tickets, you shouldn't (Do: <span class="panel-code">... #2</span>, don't: <span
+        class="panel-code">... DAT-0000</span>)
 </pre>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <div class="section">
-            Code Guidelines
-          </div>
-          <div class="panel">
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="section">
+                    Code Guidelines
+                </div>
+                <div class="panel">
 <pre>
 - Architecture Decision Records
   We use ADR's to ensure that decisions made by different developers will still result in the same guidelines being followed.
   While the list greatly expands outside of the scope of this project, it might still be an interesting read:
   <a href="https://github.com/vwt-digital/operational-data-hub/tree/develop/architecture/adr">Our Architecture Decision Records</a>
-
+</pre>
+<pre>
 - Code
   We follow best practices and coding styles that are described by the creator.
   For some languages, we increased the guidelines:
@@ -495,99 +587,108 @@ we've put together some guidelines for submitting these suggestions.
     - <a href="https://www.pylint.org/">Pylint</a>
   - Node.js
     - <a href="https://github.com/felixge/node-style-guide">Style Guide</a>
-
+</pre>
+<pre>
 - Tests
   Running the following test/checks/validators/linters will increase the integrity of the project.
 
   <a href="https://github.com/vwt-digital/cloudbuilder-sast">Cloudbuilder-SAST</a>:
   <span class="panel-bold">We run these tests on every project</span>
-  - <a href="https://www.shellcheck.net/">shellcheck</a>
-  - <a href="http://www.yamllint.com/">yamllint</a>
-  - custom json linter (any JSON linter/validator will do)
-  - <a href="https://github.com/dxa4481/truffleHog">trufflehog</a>
-  - <a href="https://pypi.org/project/bandit/">bandit</a>
-  - <a href="https://pypi.org/project/flake8/">flake8</a>
-  - <a href="https://eslint.org/">eslint</a>
+      - <a href="https://www.shellcheck.net/">shellcheck</a>
+      - <a href="http://www.yamllint.com/">yamllint</a>
+      - custom json linter (any JSON linter/validator will do)
+      - <a href="https://github.com/dxa4481/truffleHog">trufflehog</a>
+      - <a href="https://pypi.org/project/bandit/">bandit</a>
+      - <a href="https://pypi.org/project/flake8/">flake8</a>
+      - <a href="https://eslint.org/">eslint</a>
 
   <a href="https://github.com/vwt-digital/cloudbuilder-dast">Cloudbuilder-DAST</a>:
   <span class="panel-bold">We run these tests on projects that are deployed and accessible on the web</span>
-  - <a href="https://pypi.org/project/sec-helpers/">Sec-helpers</a>
+      - <a href="https://pypi.org/project/sec-helpers/">Sec-helpers</a>
 
   <a href="https://github.com/vwt-digital/cloudbuilder-unittest">Cloudbuilder-unittest</a>:
   <span class="panel-bold">We run these tests on API projects that are deployed and accessible on the web</span>
-  - <a href="https://pypi.org/project/openapi3-fuzzer/">Openapi3-fuzzer</a>
+      - <a href="https://pypi.org/project/openapi3-fuzzer/">Openapi3-fuzzer</a>
 
   Extra:
-  - <a href="https://github.com/zalando/zally">Zally</a> for API specification files.
-  - <a href="https://github.com/vwt-digital/e2e-api-coverage">e2e-api-coverage</a> after e2e tests.
+      - <a href="https://github.com/zalando/zally">Zally</a> for API specification files.
+      - <a href="https://github.com/vwt-digital/e2e-api-coverage">e2e-api-coverage</a> after e2e tests.
 
 </pre>
-          </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </section>
+</section>
 
-  <!-- Callout -->
-  <section class="callout bg-primary text-white" id="team">
+<!-- Callout -->
+<section class="callout bg-primary text-white" id="team">
     <div class="container text-center">
-      <div class="row align-items-center">
-        <div class="col-12 col-md-4">
-          <img src="img/vwtdigital-team.jpeg" alt="VolkerWessels Telecom Team">
+        <div class="row align-items-center">
+            <div class="col-12 col-md-4">
+                <img src="img/vwtdigital-team.jpeg"
+                     alt="VolkerWessels Telecom Team">
+            </div>
+            <div class="col-12 col-md-8">
+                <h3 class="text-secondary mb-0">The Team</h3>
+                <h2>Years of experience in a young team, focussed on changing
+                    and defining the future through innovation!</h2>
+            </div>
         </div>
-        <div class="col-12 col-md-8">
-          <h3 class="text-secondary mb-0">The Team</h3>
-          <h2>Years of experience in a young team, focussed on changing and defining the future through innovation!</h2>
-        </div>
-      </div>
     </div>
-  </section>
+</section>
 
-  <!-- Call to Action -->
-  <section class="content-section">
+<!-- Call to Action -->
+<section class="content-section">
     <div class="container text-center">
-      <h2 class="mb-4">Became curious or just want to grab a cup of coffee?</h2>
-      <a href="mailto:support@vwt.digital" class="btn btn-dark btn-xl mr-4">
-        <i class="far fa-paper-plane mr-2"></i> Contact us!
-      </a>
-      <a href="https://github.com/vwt-digital" target="_blank" class="btn btn-dark btn-xl mr-4">
-        <i class="fab fa-github mr-2"></i> View our GitHub page
-      </a>
+        <h2 class="mb-4">Became curious or just want to grab a cup of
+            coffee?</h2>
+        <a href="mailto:support@vwt.digital" class="btn btn-dark btn-xl mr-4">
+            <i class="far fa-paper-plane mr-2"></i> Contact us!
+        </a>
+        <a href="https://github.com/vwt-digital" target="_blank"
+           class="btn btn-dark btn-xl mr-4">
+            <i class="fab fa-github mr-2"></i> View our GitHub page
+        </a>
     </div>
-  </section>
+</section>
 
-  <!-- Map -->
-  <section id="contact" class="map">
-    <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2446.9533519567053!2d5.41904105206295!3d52.17154157965036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c64660ed8cf3a9%3A0xabbebf41e87d6475!2sVolker%20Wessels%20Telecom!5e0!3m2!1sen!2suk!4v1580112868884!5m2!1sen!2suk"></iframe>
-  </section>
+<!-- Map -->
+<section id="contact" class="map">
+    <iframe width="100%" height="100%" frameborder="0" scrolling="no"
+            marginheight="0" marginwidth="0"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2446.9533519567053!2d5.41904105206295!3d52.17154157965036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c64660ed8cf3a9%3A0xabbebf41e87d6475!2sVolker%20Wessels%20Telecom!5e0!3m2!1sen!2suk!4v1580112868884!5m2!1sen!2suk"></iframe>
+</section>
 
-  <!-- Footer -->
-  <footer class="footer text-center">
+<!-- Footer -->
+<footer class="footer text-center">
     <div class="container">
-      <div class="mb-4 text-center">
-        <img src="img/ODHlogo/ODH_logo_original.svg" alt="ODH Logo" class="odh-logo">
-      </div>
-      <p class="text-muted small mb-0">
-        Copyright &copy; <a href="https://www.vwtelecom.com/" target="_blank">VolkerWessels Telecom</a> <script type="text/javascript">document.write(new Date().getFullYear());</script>
-      </p>
+        <div class="mb-4 text-center">
+            <img src="img/ODHlogo/ODH_logo_original.svg" alt="ODH Logo"
+                 class="odh-logo">
+        </div>
+        <p class="text-muted small mb-0">
+            Copyright &copy; <a href="https://www.vwtelecom.com/"
+                                target="_blank">VolkerWessels Telecom</a>
+            <script type="text/javascript">document.write(new Date().getFullYear());</script>
+        </p>
     </div>
-  </footer>
+</footer>
 
-  <!-- Scroll to Top Button-->
-  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+<!-- Scroll to Top Button-->
+<a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
     <i class="fas fa-chevron-up"></i>
-  </a>
+</a>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+<!-- Plugin JavaScript -->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-  <!-- Custom scripts for this template -->
-  <script src="js/vwt-digital-script.min.js"></script>
+<!-- Custom scripts for this template -->
+<script src="js/vwt-digital-script.min.js"></script>
 
 </body>
 
