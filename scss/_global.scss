@@ -40,7 +40,11 @@ h6 {
 }
 
 p, ul li {
-  font-weight: 300;
+  font-weight: 400;
+}
+
+dt {
+  font-size: 1.1rem;
 }
 
 .text-faded {
@@ -49,6 +53,43 @@ p, ul li {
 
 .btn:focus {
   outline: none !important;
+}
+
+#accordion {
+  .card {
+    border-radius: 0;
+    border-color: $gray-400;
+
+    button.btn-link {
+      padding: 5px 0;
+      font-size: 15px;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: $gray-700;
+
+      &:hover {
+        color: $black;
+        text-decoration: none;
+      }
+      &:not(.collapsed) {
+        color: $black;
+        font-weight: 800;
+      }
+    }
+
+    &:first-child {
+      border-top-left-radius: .25rem;
+      border-top-right-radius: .25rem;
+    }
+    &:last-child {
+      border-bottom-left-radius: .25rem;
+      border-bottom-right-radius: .25rem;
+    }
+
+    ul {
+      margin: 0;
+    }
+  }
 }
 
 /* Map */
