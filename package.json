@@ -42,6 +42,7 @@
   },
   "resolutions": {
     "http-proxy": ">=1.18.1",
+    "axios": ">=0.21.1",
     "minimist": "~1.2.5",
     "object-path": ">=0.11.5",
     "yargs-parser": ">=13.1.2"
