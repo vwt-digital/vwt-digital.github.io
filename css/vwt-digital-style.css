@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap -  v1.0.0 (https://vwt-digital.github.io/)
- * Copyright 2013-2020 VolkerWessels Digital Ambition Team <dat@vwt.digital>
+ * Copyright 2013-2021 VolkerWessels Digital Ambition Team <dat@vwt.digital>
  * Licensed under GPL-3.0 (https://github.com/BlackrockDigital/vwt-digital-page/blob/master/LICENSE)
  */
 
