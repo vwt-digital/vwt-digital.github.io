@@ -41,6 +41,7 @@
     "minimist": "~1.2.5"
   },
   "resolutions": {
-    "postcss": ">=8.2.10"
+    "postcss": ">=8.2.10",
+    "ws": ">=7.4.6"
   }
 }
