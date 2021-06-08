@@ -145,7 +145,6 @@ dt {
   height: auto;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url("../img/network-masthead.jpg");
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/network-masthead.jpg");
   background-position: center center;
   background-repeat: no-repeat;
@@ -189,9 +188,7 @@ dt {
   right: 0;
   width: 250px;
   height: 100%;
-  -webkit-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
-  -webkit-transform: translateX(250px);
   transform: translateX(250px);
   background: #495057;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
@@ -251,7 +248,6 @@ dt {
 #sidebar-wrapper.active {
   right: 250px;
   width: 250px;
-  -webkit-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
 }
 
@@ -323,12 +319,10 @@ dt {
 .principle-item.icon-include {
   cursor: pointer;
   text-decoration: none;
-  -webkit-transition: all 0.05s ease-in-out;
   transition: all 0.05s ease-in-out;
 }
 
 .principle-item.icon-include:hover {
-  -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 
@@ -456,7 +450,6 @@ dt {
   text-align: left;
   border: none;
   outline: none;
-  -webkit-transition: background-color 0.4s;
   transition: background-color 0.4s;
 }
 
@@ -481,7 +474,6 @@ dt {
   text-align: left;
   border: 2px solid #adb5bd;
   overflow: hidden;
-  -webkit-transition: max-height .15s ease-in-out;
   transition: max-height .15s ease-in-out;
 }
 
@@ -496,48 +488,6 @@ dt {
 .accordion .accordion-item .panel pre + pre {
   border-top: 1px solid #868e96;
   padding-top: 18px;
-}
-
-.callout {
-  padding-top: 7.5rem;
-  padding-bottom: 7.5rem;
-}
-
-.callout h2 {
-  font-size: 2rem;
-}
-
-.callout h3 {
-  font-size: 1rem;
-  text-transform: uppercase;
-}
-
-.callout img {
-  width: 100%;
-  height: auto;
-  border-radius: 50%;
-  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
-}
-
-@media (max-width: 900px) {
-  .callout {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-  .callout h2 {
-    font-size: 1.75rem;
-  }
-  .callout img {
-    max-height: 200px;
-    max-width: 100%;
-    width: auto;
-  }
-}
-
-@media (max-width: 768px) {
-  .callout img {
-    margin-bottom: 40px;
-  }
 }
 
 footer.footer {
